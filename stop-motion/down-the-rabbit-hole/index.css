@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+main {
+    width: 50%;
+    min-width: 500px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: 
+        url("./img/left.svg"),
+        url("./img/prikker.png"),
+        url("./img/right.svg");
+    background-repeat: 
+        repeat-y,
+        repeat,
+        repeat-y;
+    background-position: 
+        left 0,
+        left 0,
+        right 0;     
+    animation: tunell 1s linear infinite;
+}
+
+#alice {
+    width: 50%;
+    animation: snurr 2s linear infinite
+}
+
+
+@keyframes tunell {
+    to {
+        background-position: 
+        left -300px,
+        left -300px,
+        right -300px;
+    }
+}
+
+@keyframes snurr {
+    to {
+        transform: rotate(1turn);
+    }
+}

@@ -1,0 +1,64 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    line-height: 1.6; /* Pleier å være "perfekt" størrelse, bruk gjerne denne på andre sider også. */
+}
+
+h1, h2, strong {
+    font-weight: 700;
+}
+
+
+/********* MAIN GRID *********/
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(0, 33rem) minmax(1rem, 1fr);
+    padding: 4rem 0;
+}
+
+.main-grid > * {
+    grid-column: 2 / -2;
+}
+
+
+/******* TEASER ***********/
+.teaser {
+    background-color: black;
+    color: white;
+}
+
+.teaser-title {
+    line-height: 1.4;
+    font-size: 3rem;
+}
+
+.teaser-highlight {
+    color: yellow;
+}
+
+/* Knapper */
+.btn {
+    padding: 1rem 1.5rem;
+    justify-self: start;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.primary {
+    background-color: rgb(194, 4, 4);
+    color: white;
+
+}
+.primary:hover {
+    background-color: darkred;
+}

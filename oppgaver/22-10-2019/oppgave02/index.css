@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    display: flex;
+    background-color: #ddd;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bane {
+    width: 400px;
+    height: 120px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.bane div {
+    position: absolute;
+}
+
+
+.stein {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    left: 10px;
+    top: 55px;
+    animation: skyt 2s ease-out forwards;
+}
+
+.stein2 {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid red;
+    left: 220px;
+    top: 55px;
+    animation: treff 3s ease-out forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes skyt {
+    0% {
+        left: 30px;
+        top: 55px;
+    }
+
+    100% {
+        left: 201px;
+        top: 55px;
+    }
+}
+
+@keyframes treff {
+    0% {
+        left: 220px;
+        top: 55px;
+    }
+
+    100% {
+        left: 321px;
+        top: 51px;
+    }
+}
+
+/* Bygger boet */
+
+.sirkel {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;    
+    right: 60px;
+    top: 50px
+}
+
+.s1 {
+    background-color: white;
+}
+
+.s2 {
+    background-color: red;
+    transform: scale(2);
+}
+
+.s3 {
+    background-color: white;
+    transform: scale(3);
+}
+
+.s4 {
+    background-color: blueviolet;
+    transform: scale(4);
+}
+
+

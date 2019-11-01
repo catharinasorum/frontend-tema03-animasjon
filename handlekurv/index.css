@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*********** Menyen ************/
+header {
+    max-width: 900px;
+    margin: auto;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-link {
+    padding: 1rem;
+    text-decoration: none;
+    color: steelblue;
+}
+
+.header-link:hover {
+    font-weight: 600;
+}
+
+#basket {
+    font-size: 2rem;
+    color: steelblue;
+    margin-left: auto;
+    padding: 1rem;
+}
+
+
+/***********  Varene **************/
+main {
+    height: 100vh;
+    background-color: white;
+}
+
+#chart {
+    padding-top: 1rem;
+    max-width: 60rem;
+    margin: auto;
+    display: grid;
+    grid-auto-rows: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr) );
+    gap: 1rem;
+}
+
+.vare {
+    background-color: steelblue;
+}
+
+.klone {
+    background-color: white;
+    border: 1px dotted steelblue;
+    position: absolute;
+    width: 50px;
+    height: 40px;
+}

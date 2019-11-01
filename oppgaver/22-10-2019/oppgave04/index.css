@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.sirkel {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    bottom: 50%;
+    transform-origin: center bottom;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+.s1 {
+    transform: rotate(0) translateY(-20px);
+}
+
+.s2 {
+    transform: rotate(45deg) translateY(-20px);
+    animation-delay: 0.14s;
+}
+
+.s3 {
+    transform: rotate(90deg) translateY(-20px);
+    animation-delay: 0.28s;
+}
+
+.s4 {
+    transform: rotate(135deg) translateY(-20px);
+    animation-delay: 0.42s;
+}
+
+.s5 {
+    transform: rotate(180deg) translateY(-20px);
+    animation-delay: 0.56s;
+}
+
+.s6 {
+    transform: rotate(225deg) translateY(-20px);
+    animation-delay: 0.70s;
+}
+
+.s7 {
+    transform: rotate(270deg) translateY(-20px);
+    animation-delay: 0.84s;
+}
+
+.s8 {
+    transform: rotate(315deg) translateY(-20px);
+    animation-delay: 0.98s;
+}

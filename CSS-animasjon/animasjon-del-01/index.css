@@ -1,0 +1,32 @@
+#firkant {
+    width: 400px;
+    height: 200px;
+    background-color: lightgreen;
+
+    /* Denne firkanten skal bruke animasjonen som heter flyttMeg */
+    animation-name: flyttMeg;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flyttMeg {
+    0% {
+        width: 400px;
+        background-color: lightgreen;
+        transform: rotate(0);
+    }
+
+    20% {
+        width: 1000px;
+    }
+
+    100% {
+        width: 800px;
+        background-color: lightgrey;
+        transform: rotate(1turn);
+    }
+}

@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#diagram {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: lightseagreen;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 180px;
+    align-items: end;
+    gap: 8px;
+}
+
+.soyle {
+    background-color: white;
+    height: 4%;
+    border-radius: 2px 2px 0 0;
+}
+
+.s1 {
+    animation: vokseS1 3s forwards;
+}
+
+@keyframes vokseS1 {
+    100% {
+        height: 25%;
+    }
+}
+
+.s2 {
+    animation: vokseS2 3s forwards;
+}
+
+@keyframes vokseS2 {
+    100% {
+        height: 50%;
+    }
+}
+
+.s3 {
+    animation: vokseS3 3s forwards;
+}
+
+@keyframes vokseS3 {
+    100% {
+        height: 70%;
+    }
+}
+
+.s4 {
+    animation: vokseS4 3s forwards;
+}
+
+@keyframes vokseS4 {
+    100% {
+        height: 38%;
+    }
+}
+
+.s5 {
+    animation: vokseS5 3s forwards;
+}
+
+@keyframes vokseS5 {
+    100% {
+        height: 15%;
+    }
+}
+
+.s6 {
+    animation: vokseS6 3s forwards;
+}
+
+@keyframes vokseS6 {
+    100% {
+        height: 65%;
+    }
+}

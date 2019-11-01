@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+}
+
+
+.para {
+    min-height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size: cover;
+
+    background-attachment: fixed;
+}
+
+.para h1 {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 40px;
+}
+
+.p1 {
+    background-image: url(./img/img1.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.p2 {
+    background-image: url(./img/img2.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.p3 {
+    background-image: url(./img/img3.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.content {
+    min-height: 100vh;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 40px;
+}
+
+.content h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.c1 {
+    background-color: rgb(129, 177, 174);
+    min-height: 50vh;
+}
+
+.bildeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-auto-rows: 100px;
+    gap: 1px;
+}
+
+.bildeGrid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c2 {
+    background-color: rgb(129, 177, 174);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c2 h1,a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+
+.c2 a:hover {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.9);
+}

@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boks {
+    height: 500px;
+    width: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.firkant {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+
+.foran {
+    background-color: cadetblue;
+    transform-origin: center center;
+    animation: snurrVenstre 10s infinite linear;
+    animation-play-state: paused;
+}
+
+.bak {
+    background-color: lightpink;
+    transform-origin: center center;
+    animation: snurrHoyre 10s infinite linear;
+    animation-play-state: paused;
+}
+
+.boks:hover div {
+    animation-play-state: running;
+}
+
+@keyframes snurrVenstre {
+    to {
+        transform: rotate(-1turn);
+    }
+}
+
+@keyframes snurrHoyre {
+    to {
+        transform: rotate(1turn);
+    }
+}
